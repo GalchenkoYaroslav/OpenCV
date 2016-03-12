@@ -59,7 +59,7 @@ public class FaceDetectionController
 	 */
 	protected void init()
 	{
-		this.capture = new VideoCapture("resources/market.mp4");
+		this.capture = new VideoCapture("resources/mark.mp4");
 		this.faceCascade = new CascadeClassifier();
 		this.absoluteFaceSize = 0;
 	}
@@ -82,7 +82,7 @@ public class FaceDetectionController
 			this.lbpClassifier.setDisable(true);
 			
 			// start the video capture
-			this.capture.open("resources/market.mp4");
+			this.capture.open("resources/mark.mp4");
 			
 			// is the video stream available?
 			if (this.capture.isOpened())
